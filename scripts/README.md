@@ -6,7 +6,7 @@ This folder is meant to contain user scripts. An example folder structure is as 
 >> example_collab
 >>> README.md
 >>>> matlab
->>>> README.md
+>>>>> README.md
 >>>> python
 >>>>> README.md
 > linux_setenv.sh
