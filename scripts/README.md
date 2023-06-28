@@ -1,5 +1,25 @@
-This folder is meant to contain user scripts. At present we provide locations for python and matlab development.
+This folder is meant to contain user scripts. An example folder structure is as follows:
 
-We also provide a bash command meant to help set environment variables that can be used to automatically download data and create pipelines more efficiently. For more information, please consult [iEEG Workflow Example](../examples/pipeline/ieeg/iEEG_example.ipynb).
-
-We also provide a sample directory in the python folder meant to help a user create their own whl files for code deployment across systems and environments.
+.
+├── README.md
+├── collabs
+│   └── example_collab
+│       ├── README.md
+│       ├── matlab
+│       │   └── README.md
+│       └── python
+│           └── README.md
+├── linux_setenv.sh
+├── mac_setenv.sh
+└── users
+    └── example_user
+        ├── project_00
+        │   ├── matlab
+        │   │   └── README.md
+        │   └── python
+        │       └── README.md
+        └── project_01
+            ├── matlab
+            │   └── README.md
+            └── python
+                └── README.md
