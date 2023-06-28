@@ -3,6 +3,10 @@ This folder is meant to contain user scripts. An example folder structure is as 
 ./
 > README.md
 
+> linux_setenv.sh
+
+> mac_setenv.sh
+
 > collabs
 
 >> example_collab
@@ -16,10 +20,6 @@ This folder is meant to contain user scripts. An example folder structure is as 
 >>>> python
 
 >>>>> README.md
-
-> linux_setenv.sh
-
-> mac_setenv.sh
 
 > users
 
