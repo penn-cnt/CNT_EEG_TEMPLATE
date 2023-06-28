@@ -1,9 +1,9 @@
 This folder is meant to contain user scripts. An example folder structure is as follows:
 
 ./
-README.md
-collabs
-    example_collab
+> README.md
+> collabs
+>> example_collab
         README.md
         matlab
             README.md
