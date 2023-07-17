@@ -29,6 +29,26 @@ def check_hosts(remote_host,ssh):
     # return ssh
 
 def read(filepath,host,username,password):
+    """
+    Open a file on a remote system and return the object in memory using ssh and sftp.
+
+    Parameters
+    ----------
+    filepath : STR
+        Absolute path to the file on the remote system that needs to be opened.
+    host : STR
+        Name of the host system.
+    username : STR
+        Username for the remote system.
+    password : STR
+        Password for the remote system.
+
+    Returns
+    -------
+    file_contents : object
+        In memory copy of the remote data.
+
+    """
 
     # Set up SSH connection to the remote system
     ssh = paramiko.SSHClient()
@@ -58,6 +78,22 @@ def read(filepath,host,username,password):
     return file_contents
 
 def write(obj,filepath,host,username,password):
+    """
+    Write a file on a remote system with the object in memory using ssh and sftp.
+
+    Parameters
+    ----------
+    filepath : STR
+        Absolute path to the file on the remote system that needs to be written.
+    host : STR
+        Name of the host system.
+    username : STR
+        Username for the remote system.
+    password : STR
+        Password for the remote system.
+
+    """
+    
 
     # Set up SSH connection to the remote system
     ssh = paramiko.SSHClient()
