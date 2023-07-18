@@ -9,12 +9,12 @@ remote system.
 This should be considered when code is close to release and data needs to be stored on systems such as Lief or Borel.
 
 ### Examples
-> import pandas as PD
 
-> import stream_ssh as STRMSSH
-
-> from functools import partial
-
-> DF = STRMSSH.read('path/to/file/on/remote/system.csv','borel.seas.upenn.edu','USERNAME','USERPASSWORD',partial(PD.read_csv,names=['a','b'],usecols=[1,2])
+```
+import pandas as PD
+from functools import partial
+import stream_ssh as STRMSSH
+DF = STRMSSH.read('path/to/file/on/remote/system.csv','borel.seas.upenn.edu','USERNAME','USERPASSWORD',partial(PD.read_csv,names=['a','b'],usecols=[1,2])
+```
 
 will stream the data on borel into the partial function instantiation of a pandas datafrme and return your data with the associated key:value pairs applied.
