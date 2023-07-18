@@ -1,6 +1,7 @@
 import os
 import io
 import paramiko
+from functools import partial
 
 def check_hosts(remote_host,ssh):
     """
@@ -27,8 +28,8 @@ def check_hosts(remote_host,ssh):
         # Set the missing host key policy if the host is missing
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     # return ssh
-
-def read(filepath,host,username,password):
+    
+def read(filepath,host,username,password,partial_fnc=None):
     """
     Open a file on a remote system and return the object in memory using ssh and sftp.
 
@@ -42,6 +43,9 @@ def read(filepath,host,username,password):
         Username for the remote system.
     password : STR
         Password for the remote system.
+    partial_fnc : functools.partial object
+        A partial instantiation of the data load. Enter all keywords except for the file location and this will
+        call the file across an ssh protocol and inherit the remaining keywords.
 
     Returns
     -------
@@ -66,7 +70,11 @@ def read(filepath,host,username,password):
     remote_file = sftp.open(filepath, 'r')
     
     # Read the file contents into memory
-    file_contents = remote_file.read()
+    if partial_fnc == None:
+        file_contents = remote_file.read()
+    else:
+        file_contents = io.BytesIO(remote_file.read())
+        file_contents = partial_fnc(file_contents)
     
     # Close the file and the SFTP session
     remote_file.close()
