@@ -46,9 +46,6 @@ A short description of some of the top-level directories and files are as follow
 ### core_libraries
 This folder contains the submodules and build files that make up the core libraries used for lab-wide projects.
 
-### data_pointers
-This folder contains pointers to data contained on Borel and Lief. Data requests should reference these data pointers to prevent duplication before downloading new data.
-
 ### documents
 This folder contains various research documents associated with a project (i.e. SoPs, Pipeline diagrams, etc.) as well as code documentation (e.g.document strings) for the various libraries.
 
@@ -58,11 +55,8 @@ This folder contains example python and matlab scripts for various research task
 ### reference_data
 This folder contains data that can be used for building targets or conducting unit tests.
 
-### sample_data
-This folder contains sample data that might be used in any of the lab-wide projects.
-
 ### scripts
-This folder contains user-defined scripts. 
+This folder contains user-defined scripts on a per project basis.
 
 ### unit_tests
 This folder contains unit tests for validating new/altered code at both the machine level and model level.
