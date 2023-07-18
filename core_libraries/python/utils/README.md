@@ -15,6 +15,6 @@ This should be considered when code is close to release and data needs to be sto
 
 > from functools import partial
 
-> STRMSSH.read('path/to/file/on/remote/system.csv','borel.seas.upenn.edu','USERNAME','USERPASSWORD',partial(PD.read_csv,names=['a','b'],usecols=[1,2])
+> DF = STRMSSH.read('path/to/file/on/remote/system.csv','borel.seas.upenn.edu','USERNAME','USERPASSWORD',partial(PD.read_csv,names=['a','b'],usecols=[1,2])
 
 will stream the data on borel into the partial function instantiation of a pandas datafrme and return your data with the associated key:value pairs applied.
