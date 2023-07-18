@@ -3,6 +3,9 @@ Core Libraries
 
 This folder is meant to house the scripts, wheels, and sutrees (etc.) that compose the core libraries used by the CNT.
 
+By default, any changes you make to this folder will not be merged with the labwide repository. If you believe that something should be added or changed, please reach out to [Brian Prager](mailto:bjprager@seas.upenn.edu), [Darrel De 
+Freitas](mailto:ddd@seas.upenn.edu), or [Joshua Asuncion](mailto:asuncion@seas.upenn.edu).
+
 
 # Folder Structure
 
@@ -10,31 +13,15 @@ This folder is meant to house the scripts, wheels, and sutrees (etc.) that compo
 
 This folder stores the python wheels and environment files for the main research branches in the lab.
 
+### ieeg
+Code libraries specifically focused on intracranial eeg projects. May share many depndencies with scalp code.
+
+### scalp
+Code libraries specifically focused on intracranial eeg projects. May share many depndencies with ieeg code.
+
+### utils
+Scripts meant to provide general utility for EEG projects, regardless of their specific type. (i.e. iEEG.org downloads, Borel Cache, etc.)
+
 ## matlab
 
 Under development.
-
-## Subtrees
-
-Subtrees of external repositories. Used to manage a snapshot of our library and provide offline support, documentation, etc.
-
-# Note
-
-## Imaging
-
-Many of the tools for imaging use dockerized containers or external libraries meant for ease of viewing. Where possible, we provide python and matlab support. As needed, we also provide external libraries and build files in other languages to aid in this research.
-
-### FSL
-A symbolic link to the FSL installer can be found at python/imaging/. As a note, FSL installs to a separate python environment. 
-
-This environment can be activated using:
-
-> conda activate fsal
-
-## Dockers
-
-### FSL
-TBD
-
-### FastSurfer
-For more information, please visit: [FastSurfer Docker](https://github.com/Deep-MI/FastSurfer/tree/stable/Docker)
