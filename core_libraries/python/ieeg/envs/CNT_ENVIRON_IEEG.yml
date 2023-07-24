@@ -11,6 +11,7 @@ dependencies:
 - tabulate
 - numba<0.54
 - spyder
+- pip
 - pip:
   - pennprov
   - epycom
