@@ -14,10 +14,10 @@ Freitas](mailto:ddd@seas.upenn.edu), or [Joshua Asuncion](mailto:asuncion@seas.u
 This folder stores the python wheels and environment files for the main research branches in the lab.
 
 ### ieeg
-Code libraries specifically focused on intracranial eeg projects. May share many depndencies with scalp code.
+Code libraries specifically focused on intracranial eeg projects. May share many dependencies with scalp code.
 
 ### scalp
-Code libraries specifically focused on intracranial eeg projects. May share many depndencies with ieeg code.
+Code libraries specifically focused on intracranial eeg projects. May share many dependencies with ieeg code.
 
 ### utils
 Scripts meant to provide general utility for EEG projects, regardless of their specific type. (i.e. iEEG.org downloads, Borel Cache, etc.)
