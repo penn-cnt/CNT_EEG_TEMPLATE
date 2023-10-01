@@ -38,7 +38,7 @@ project to ensure your dependencies and code are properly referenced. Examples f
 
 ## Repository Structure
 
-A hyperlink enabled repository tree is available within the [repository_structure](./repository_structure.md) markdown file. We demonstrate the use of git-ginored files and folders by displaying those 
+A hyperlink enabled repository tree is available within the [repository_structure](./repository_structure.md) markdown file. We demonstrate the use of git-ignored files and folders by displaying those 
 entries with a :warning: symbol.
 
 A short description of some of the top-level directories and files are as follows:
