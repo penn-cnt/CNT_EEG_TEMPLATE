@@ -9,3 +9,5 @@ This example brew is meant to demonstrate how to locally install a python enviro
 ## Process
 1. Create a virtual environment in your desired directory
     - `virtualenv /path/to/your/env`
+2. Activate the environment
+    - `source /path/to/your/env/bin/activate`
