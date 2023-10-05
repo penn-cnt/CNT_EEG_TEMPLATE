@@ -11,3 +11,5 @@ This example brew is meant to demonstrate how to locally install a python enviro
     - `virtualenv /path/to/your/env`
 2. Activate the environment
     - `source /path/to/your/env/bin/activate`
+3. Pip install from yaml file. This will now store the results in your envionment folder, outside of the normal install directory
+    - `pip install -r requirements.yml`
