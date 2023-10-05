@@ -3,4 +3,4 @@
 ## Optional First Steps
 1. Create a folder for your repository/workspace
 2. Clone the workspace to the current directory using:
-    - git clone <git-url>
+    - git clone `<git-url>'
