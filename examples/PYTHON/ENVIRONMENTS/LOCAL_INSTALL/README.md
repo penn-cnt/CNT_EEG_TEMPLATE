@@ -13,6 +13,7 @@ This example brew is meant to demonstrate how to locally install a python enviro
     - `source /path/to/your/env/bin/activate`
 3. Pip install from requirements file. This will now store the results in your envionment folder, outside of the normal install directory
     - `pip install -r requirements.txt`
+    - **NOTE** If you want to just install a singular package, you can just run `pip install <package-name>` at this stage
 
 # Deactivating the environment
 Exit your environment with the following command. `deactivate`.
