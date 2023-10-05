@@ -4,4 +4,8 @@ This example brew is meant to demonstrate how to locally install a python enviro
 ## Optional First Steps
 1. Create a folder for your repository/workspace
 2. Clone the workspace to the current directory using:
-    - git clone `<git-url>`
+    - `git clone <git-url>`
+
+## Process
+1. Create a virtual environment in your desired directory
+    - `virtualenv /path/to/your/env`
